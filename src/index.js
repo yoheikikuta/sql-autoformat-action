@@ -15,7 +15,7 @@ function runAction() {
     log('Auto formatting the queries.');
     let output;
     try {
-        output = run('./src/format_all_sql_files.sh');
+        output = run("for file in `find . -name '*.sql'`; do zetasql-formatter $file; done");
     } catch (ex) {
         output = ex.stdout;
     }

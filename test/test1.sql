@@ -1,5 +1,5 @@
 SELECT
-  *
+*
 FROM
-  foobar
+foobar
 LIMIT 100;
