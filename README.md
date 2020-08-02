@@ -4,8 +4,8 @@
 This is a repository of a GitHub Action for auto-formatting SQL queries.  
 This GitHub Action uses https://github.com/Matts966/zetasql-formatter as a formatter.
 
-![caption](https://i.imgur.com/nWfUKgF.png)
-Left: original query, Center: formatted query using BQ Web UI, Right: formatted query using SQL AutoFormat Action (zetasql).
+![query comparison](https://i.imgur.com/nWfUKgF.png)
+Left: original query, Center: formatted query using BQ Web UI, Right: formatted query using SQL AutoFormat Action (zetasql-formatter).
 
 ## Usage
 Create a GitHub Actions workflow yaml file (e.g., `./github/workflow/autoformat.yml`) like the following:
@@ -38,6 +38,10 @@ jobs:
               with:
                 github_token: ${{ secrets.github_token }}
 ```
+
+This GitHub Action automatically format `*.sql` files, then commit and push.
+
+![commit log](https://i.imgur.com/eLVJtkz.png)
 
 ## Acknowledgement
 This repository is based on https://github.com/samuelmeuli/lint-action and https://github.com/Matts966/zetasql-formatter.
