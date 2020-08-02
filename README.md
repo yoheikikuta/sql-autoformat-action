@@ -29,8 +29,8 @@ jobs:
                 sudo unzip zetasql-formatter_linux_x86_64.zip -d /usr/local/bin
                 rm zetasql-formatter_linux_x86_64.zip
 
-            - name: Auto-formatting queries
-              uses: yoheikikuta/sql-autoformat-action@v1
+            - name: SQLAutoFormatter
+              uses: yoheikikuta/sql-autoformat-action@1.0.0
               with:
                 github_token: ${{ secrets.github_token }}
 ```
