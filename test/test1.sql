@@ -1,1 +1,5 @@
-SELECT * FROM foobar     LIMIT 100;
+SELECT
+  *
+FROM
+  foobar
+LIMIT 100;
