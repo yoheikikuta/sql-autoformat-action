@@ -1,4 +1,4 @@
-name: 'AutoFormat'
+name: 'SQLAutoFormatter'
 description: 'Auto-format BigQuery queries.'
 author: 'yoheikikuta'
 
