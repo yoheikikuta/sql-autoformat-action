@@ -1,0 +1,32 @@
+name: 'AutoFormat'
+description: 'Auto-format BigQuery queries.'
+author: 'yoheikikuta'
+
+inputs:
+  github_token:
+    description: The GITHUB_TOKEN secret.
+    required: true
+  auto_fix:
+    description: Whether formatter should try to fix code style issues automatically.
+    required: false
+    default: "true"
+  git_name:
+    description: Username for auto-format commits.
+    required: false
+    default: "BigQuery AutoFormatter"
+  git_email:
+    description: Email address for auto-fix commits.
+    required: false
+    default: "test@example.com"
+  commit_message:
+    description: Template for auto-format commit messages.
+    required: false
+    default: "Auto-format queries"
+
+runs:
+  using: 'node12'
+  main: './src/index.js'
+
+branding:
+  icon: 'chevrons-up'
+  color: 'green'
