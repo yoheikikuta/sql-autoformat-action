@@ -1,7 +1,11 @@
 ![test: formatting queries](https://github.com/yoheikikuta/sql-autoformat-action/workflows/test:%20formatting%20queries/badge.svg)
 
 # SQL AutoFormat Action
-This is a repository of a GitHub Action for auto-formatting SQL queries.
+This is a repository of a GitHub Action for auto-formatting SQL queries.  
+This GitHub Action uses https://github.com/Matts966/zetasql-formatter as a formatter.
+
+![caption](https://i.imgur.com/nWfUKgF.png)
+Left: original query, Center: formatted query using BQ Web UI, Right: formatted query using SQL AutoFormat Action (zetasql).
 
 ## Usage
 Create a GitHub Actions workflow yaml file (e.g., `./github/workflow/autoformat.yml`) like the following:
@@ -21,7 +25,7 @@ jobs:
 
         steps:
             - name: Check out Git repository
-              uses: actions/checkout@v2.0.0
+              uses: actions/checkout@v2
 
             - name: Install zetasql
               run: |
@@ -30,7 +34,7 @@ jobs:
                 rm zetasql-formatter_linux_x86_64.zip
 
             - name: SQLAutoFormatter
-              uses: yoheikikuta/sql-autoformat-action@1.0.0
+              uses: yoheikikuta/sql-autoformat-action@v1
               with:
                 github_token: ${{ secrets.github_token }}
 ```
