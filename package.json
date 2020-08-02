@@ -1,0 +1,22 @@
+{
+  "name": "sql-autoformat-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for formatting SQL queries automatically.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yoheikikuta/sql-autoformat-action.git"
+  },
+  "author": "yoheikikuta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yoheikikuta/sql-autoformat-action/issues"
+  },
+  "homepage": "https://github.com/yoheikikuta/sql-autoformat-action#readme"
+}
