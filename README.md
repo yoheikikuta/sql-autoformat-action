@@ -8,7 +8,7 @@ This GitHub Action uses https://github.com/Matts966/zetasql-formatter as a forma
 Left: original query, Center: formatted query using BQ Web UI, Right: formatted query using SQL AutoFormat Action (zetasql-formatter).
 
 ## Usage
-Create a GitHub Actions workflow yaml file (e.g., `./github/workflow/autoformat.yml`) like the following:
+Create a GitHub Actions workflow yaml file (e.g., `./github/workflows/autoformat.yml`) like the following:
 
 ```yml
 name: "Formatting queries"
